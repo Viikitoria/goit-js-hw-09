@@ -24,7 +24,7 @@ form.addEventListener("input", onInputChange);
 function onInputChange(event) {
   const { name, value } = event.target;
 
-  formData[name] = value.trim();
+  formData[name] = value;
 
   localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
 }
